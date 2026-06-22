@@ -3,7 +3,7 @@ import java.io.*;
 public class GroceryBillReader {
     public static void main(String[] args) {
 
-        int lineCount = 0;
+        int count = 0;
 
         try {
             FileReader fr = new FileReader("bill.txt");
@@ -15,12 +15,12 @@ public class GroceryBillReader {
 
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
-                lineCount++;
+                count++;
             }
 
             br.close();
 
-            System.out.println("\nTotal Number of Lines = " + lineCount);
+            System.out.println("\nTotal Number of Lines = " + count);
 
         } catch (FileNotFoundException e) {
             System.out.println("bill.txt file not found!");

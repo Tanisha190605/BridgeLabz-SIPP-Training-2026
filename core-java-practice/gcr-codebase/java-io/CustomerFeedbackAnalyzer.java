@@ -6,7 +6,7 @@ public class CustomerFeedbackAnalyzer {
         BufferedReader br =
                 new BufferedReader(new InputStreamReader(System.in));
 
-        int goodCount = 0;
+        int count  = 0;
 
         System.out.println("Enter 5 feedback messages:");
 
@@ -15,10 +15,10 @@ public class CustomerFeedbackAnalyzer {
             String feedback = br.readLine();
 
             if (feedback.toLowerCase().contains("good")) {
-                goodCount++;
+                count++;
             }
         }
 
-        System.out.println("Good Feedback Count = " + goodCount);
+        System.out.println("Good Feedback Count = " + count);
     }
 }

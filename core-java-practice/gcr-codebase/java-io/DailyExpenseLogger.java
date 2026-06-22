@@ -13,9 +13,7 @@ public class DailyExpenseLogger {
             System.out.print("Enter Amount: ");
             double amount = sc.nextDouble();
 
-            // true = append mode
-            BufferedWriter bw = new BufferedWriter(
-                    new FileWriter("expenses.txt", true));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("expenses.txt", true));
 
             bw.write(category + " - " + amount);
             bw.newLine();
